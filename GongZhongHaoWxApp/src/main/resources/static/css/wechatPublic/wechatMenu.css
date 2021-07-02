@@ -1,0 +1,53 @@
+.phoneStyle{
+    height: 100%;
+    border-right: 1px solid #9b9b9b;
+}
+
+.phoneMenu{
+    height: 90%;
+    margin-top: 15px;
+}
+.phoneMenuPng{
+    height: 100%;
+    float: left;
+}
+.phoneMenuBox{
+    height: 85%;
+    position: absolute;
+    top: 8%;
+    padding: 0;
+}
+.phoneMenuButBox{
+    height: 10%;
+    border-top: 1px solid #9b9b9b;
+    background-color: #F6F6F6;
+    position: absolute;
+    bottom: 0px;
+    padding: 0;
+}
+.phoneMenuJianPanDiv{
+    margin: 4% 0 0 2%;
+    padding: 0;
+}
+.phoneMenuJianPan{
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    padding: 0;
+    margin-left: 20%;
+}
+.phoneAddMenu{
+    height: 30px;
+    border-left: 1px solid #9b9b9b;
+    margin: 3% 0 0 2%;
+}
+.tianjia{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.phoneBut{
+    height: 100%;
+    border-right: 1px solid #9b9b9b;
+}

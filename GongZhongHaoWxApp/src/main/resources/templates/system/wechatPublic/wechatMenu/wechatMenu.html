@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh" xmlns:th="http://www.thymeleaf.org" xmlns:shiro="http://www.pollix.at/thymeleaf/shiro">
+<head>
+    <th:block th:include="include :: header('微信自定义菜单')" />
+    <th:block th:include="include :: footer" />
+    <link href="../static/css/wechatPublic/wechatMenu.css" th:href="@{/css/wechatPublic/wechatMenu.css}" rel="stylesheet">
+    <script th:inline="javascript">
+        /**
+         * 点击第一个添加菜单按钮
+         */
+        function menuAdd1() {
+            $("#phoneAddMenu1").css("background-color","#7aba7b");
+            $("#tianjia1").css("color","red");
+            alert("是否点击了第一个添加菜单按钮？");
+        }
+    </script>
+</head>
+<body class="gray-bg">
+    <!-- 左边菜单预览 -->
+    <div class="col-sm-4 phoneStyle"><!--  style="text-align: center"-->
+        <div class="col-sm-10 col-sm-offset-1 phoneMenu" >
+            <img class="col-sm-12 phoneMenuPng" src="../../img/phone.png">
+            <div class="col-sm-9 col-sm-offset-1 phoneMenuBox">
+                <div class="col-sm-12 phoneMenuButBox">
+                    <div class="col-sm-2 phoneMenuJianPanDiv">
+                        <img class="col-sm-2 phoneMenuJianPan" src="../../img/shuru.png">
+                    </div>
+
+                    <a href="#" onclick="menuAdd1()">
+                        <div class="col-sm-3 phoneAddMenu" id="phoneAddMenu1">
+                            <H1 class="tianjia" id="tianjia1">+</H1>
+                        </div>
+                    </a>
+
+                    <a>
+                        <div class="col-sm-3 phoneAddMenu">
+                            <H1 class="tianjia">+</H1>
+                        </div>
+                    </a>
+
+                    <a>
+                        <div class="col-sm-3 phoneAddMenu">
+                            <H1 class="tianjia">+</H1>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+            <H2 style="text-align: center; line-height: 35px">自定义菜单展示</H2>
+        </div>
+    </div>
+    <!-- 中间自定义菜单操作 -->
+    <div class="col-sm-4 phoneBut">中间</div>
+    <div class="col-sm-4">右边</div>
+</body>
+</html>
